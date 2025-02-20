@@ -12,6 +12,24 @@ import pyfiglet
 
 def clear_terminal():
     os.system('cls' if os.name == 'nt' else 'clear')
+import os
+import socket
+import platform
+import hashlib
+import time
+from datetime import datetime
+import calendar
+import base64
+import random
+import string
+import pyfiglet
+
+# Define color codes
+CYAN = '\033[96m'
+RESET = '\033[0m'
+
+def clear_terminal():
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 def banner():
     banner_art = CYAN + r"""
@@ -24,6 +42,9 @@ Basic Multi-Tool by Ivan
 """ + RESET
 
     print(banner_art)
+
+# Rest of your code...
+
 
 def port_scanner(host, port):
     try:
