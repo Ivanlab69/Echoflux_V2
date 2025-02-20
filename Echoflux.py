@@ -14,14 +14,15 @@ def clear_terminal():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def banner():
-    banner_art = r"""
+    banner_art = CYAN + r"""
  _____     _            __ _            
 | ____|___| |__   ___  / _| |_   ___  __
 |  _| / __| '_ \ / _ \| |_| | | | \ \/ /
 | |__| (__| | | | (_) |  _| | |_| |>  < 
 |_____\___|_| |_|\___/|_| |_|\__,_/_/\_\
 Basic Multi-Tool by Ivan
-    """
+""" + RESET
+
     print(banner_art)
 
 def port_scanner(host, port):
